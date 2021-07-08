@@ -13,8 +13,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
         $password = $_POST['password'];
         $data = 'data={ "identifiant": "'.$username.'", "motdepasse": "'.$password.'" }';
     }
-}
- else {
+} else {
     http_response_code(400);
     echo "Mauvaise methode !";
     exit();
